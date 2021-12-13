@@ -329,8 +329,8 @@ def sgg_collate_fn(batch_data):
 
 class SGGDataLoader(torch.utils.data.DataLoader):
     """Custom data loader for Scene Graph Generation."""
-
-    def __init__(self, dataset, batch_size, shuffle=True, num_workers=2,
+    #Can't pickle local object 'SGGDataLoader.__init__.<locals>.<lambda>' 把代码中的num_workers改为0就解决了
+    def __init__(self, dataset, batch_size, shuffle=True, num_workers=0,
                  drop_last=False, device='cuda:0'):
         """Initialize loader for given dataset and annotations."""
         super().__init__(

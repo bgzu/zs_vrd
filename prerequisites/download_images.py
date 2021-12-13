@@ -102,7 +102,7 @@ def download_unrel(data_folder):
     data_folder = str(data_folder + 'UnRel/images/')
     # Download both VRD and UnRel images
     os.system("wget " + VRD)
-    shutil.move('sg_dataset.zip', data_folder + 'sg_dataset.zip')
+    shutil.move('../sg_dataset.zip', data_folder + 'sg_dataset.zip')
     with ZipFile(data_folder + 'sg_dataset.zip') as fid:
         fid.extractall(data_folder)
     os.remove(data_folder + 'sg_dataset.zip')

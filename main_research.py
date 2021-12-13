@@ -52,7 +52,7 @@ def parse_args():
     # Model to train/test and peculiar parameters
     parser.add_argument(
         '--model', dest='model', help='Model to train (see main.py)',
-        type=str, default='lang_spat_net'
+        type=str, default='atr_net'
     )
     parser.add_argument(
         '--model_params', dest='model_params',
@@ -217,7 +217,7 @@ def parse_args():
     parser.add_argument(
         '--num_workers', dest='num_workers',
         help='Number of workers employed by data loader',
-        type=int, default=2
+        type=int, default=0
     )
     parser.add_argument(
         '--rel_batch_size', dest='rel_batch_size',
