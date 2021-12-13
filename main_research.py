@@ -16,7 +16,8 @@ from research.src.models.sg_generator import (
     visual_net,
     visual_spat_net,
     visual_spat_attention_net,
-    uvtranse_net
+    uvtranse_net,
+    visual_attention_net
 )
 from research.src.models.sg_projector import (
     language_projector,
@@ -42,7 +43,8 @@ MODELS = {
     'visual_spat_attention_net': visual_spat_attention_net,
     'visual_spat_attention_projector': visual_spat_attention_projector,
     'visual_spat_net': visual_spat_net,
-    'visual_spat_projector': visual_spat_projector
+    'visual_spat_projector': visual_spat_projector,
+    'visual_attention_net': visual_attention_net
 }
 
 
