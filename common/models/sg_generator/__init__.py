@@ -12,3 +12,4 @@ from .uvtranse_net import UVTransE
 from .visual_net import VisualNet
 from .visual_spat_attention_net import VisualSpatAttentionNet
 from .visual_spat_net import VisualSpatNet
+from .visual_attention_net import VisualAttentionNet
