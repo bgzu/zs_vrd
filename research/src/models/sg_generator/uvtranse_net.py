@@ -36,6 +36,7 @@ class TrainTester(SGGTrainTester):
         )
         if self._use_multi_tasking and self._task != 'preddet':
             loss += self._multitask_loss(outputs[1], batch, step)
+        return loss, losses
 
 
 def train_test(config, obj_classifier=None, teacher=None, model_params={}):
